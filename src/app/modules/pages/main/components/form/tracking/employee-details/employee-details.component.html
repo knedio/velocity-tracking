@@ -1,0 +1,59 @@
+<div class="tracking-form">
+  <div class="header">
+    Employee details
+  </div>
+  <div class="body">
+    <form [formGroup]="form"
+      *ngIf="data?.employeeDetails?.length"
+    >
+      <div
+        *ngFor="let row of data.employeeDetails; let i = index;"
+        class="flex mb-2 justify-space-between gap-8"
+        
+      >
+        <div class="field">
+          <label>Employee</label>
+          <input
+            class="input"
+            type="text"
+            [value]="row.employee"
+            (change)="onChangeInput(row, $event, 'employee')"
+          />
+        </div>
+        <div class="field">
+          <label>Estimated Hours</label>
+          <input
+            class="input"
+            type="number"
+            [value]="row.estimatedHours"
+            (change)="onChangeInput(row, $event, 'estimatedHours')"
+          />
+        </div>
+        <div class="field">
+          <label>Actual Hours</label>
+          <input
+            class="input"
+            type="number"
+            [value]="row.actualHours"
+            (change)="onChangeInput(row, $event, 'actualHours')"
+          />
+          <div
+            *ngIf="i === 0"
+            class="sign"
+            [class]="{'disable': checkIfDisablePlusButton()}"
+            (click)="onAddEmployee()"
+          >
+            &plus;
+          </div>
+          <div
+            *ngIf="i !== 0"
+            class="sign"
+            (click)="onAddEmployee(true, row)"
+          >
+            &#8722;
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 60px;
+  background-color: rgba(0,0,0,0.5);
+  box-shadow: 0.2px 0.6px 0.5px 0.5px
+}
+.tracking-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: #fff;
+}
+.header {
+  background: lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 20px;
+}
+.body {
+  padding: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+}
+.btn {
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border: unset;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+}
+.btn-save {
+  background-color: #000C66;
+}
+.btn-close {
+  background-color: #C0C0C0;
+}

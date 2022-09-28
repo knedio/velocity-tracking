@@ -1,1 +1,91 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.justify-space-around {
+  justify-content: space-around;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+
+
+.w-full {
+  width: 100% !important;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.text-blue {
+  color: lightblue;
+}
+.tracking-form .header {
+  color: lightblue;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.tracking-form .body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.field {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+}
+.field label {
+  font-weight: bold;
+  margin-right: 20px;
+  min-width: 200px;
+  margin-top: 12px;
+}
+.field .input {
+  height: 35px;
+  box-shadow: 0 0 3px -1px;
+  border: unset;
+  border-radius: 5px;
+  width: 330px;
+}
+.field textarea {
+  height: 100px !important;
+}
+
+.disable {
+  cursor: unset !important;
+  pointer-events: none !important;
+  opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gap-8 {
+  gap: 8px;
+}

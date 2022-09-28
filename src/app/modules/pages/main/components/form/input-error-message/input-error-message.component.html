@@ -1,0 +1,8 @@
+<div
+  *ngIf="errors && show"
+  class="error"
+>
+  <div *ngIf="errors['required']">
+    This field is required.
+  </div>
+</div>

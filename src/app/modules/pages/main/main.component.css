@@ -1,0 +1,13 @@
+.main-container {
+  padding: 20px;
+}
+.btn-add {
+  cursor: pointer;
+  width: 80px;
+  height: 30px;
+  background-color: #000C66;
+  border: unset;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+}

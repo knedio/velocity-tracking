@@ -1,0 +1,37 @@
+<div
+  *ngIf="show"
+  class="modal"
+>
+  <div class="tracking-container">
+    <div class="header">
+      Velocity Tracking
+    </div>
+    <div class="body">
+      <app-project-details
+        [data]="trackForm"
+        (changeData)="onChangeForm($event)"
+      ></app-project-details>
+      <app-employee-details
+        [data]="trackForm"
+        (changeData)="onChangeForm($event)"
+      ></app-employee-details>
+  
+      <div class="footer gap-8">
+        <button
+          class="btn btn-close"
+          (click)="close.emit()"
+        >
+          Close
+        </button>
+        <button
+          class="btn btn-save"
+          [class]="{'disable': !isDisabledForm}"
+          [disabled]="!isDisabledForm"
+          (click)="onSave()"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

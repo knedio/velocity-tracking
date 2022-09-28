@@ -1,0 +1,18 @@
+<div class="main-container">
+  <div class="flex column mb-2">
+    <button
+      class="btn-add"
+      (click)="onShowModal()"
+    >
+      Add
+    </button>
+  </div>
+  <app-tracking-table
+    [employees]="employees"
+  ></app-tracking-table>
+  <app-tracking
+    [show]="show"
+    (add)="onChangeData($event)"
+    (close)="onShowModal()"
+  ></app-tracking>
+</div>
